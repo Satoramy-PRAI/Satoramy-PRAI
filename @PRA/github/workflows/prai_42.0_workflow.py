@@ -1087,3 +1087,156 @@ print("Advanced algorithm result:", advanced_result)
 # Fortsetzung der Wissensbasis-Erweiterung und maschinelles Lernen
 def expand_machine_learning(knowledge):
     print
+# Fortsetzung der Wissensbasis-Erweiterung und maschinelles Lernen
+def expand_machine_learning(knowledge):
+    print("Expanding machine learning capabilities...")
+    updated_knowledge = {key: f"{info} - extended" for key, info in knowledge.items()}
+    print("Updated knowledge with machine learning:", updated_knowledge)
+    return updated_knowledge
+
+# Neue Funktion: Verbesserung der 3D-Logik und Simulationen
+def advanced_3d_logic(self):
+    print("Handling advanced 3D logic and simulations...")
+    example3DModel = {
+        'vertices': [],
+        'edges': [],
+        'faces': [],
+        'addVertex': lambda x, y, z: example3DModel['vertices'].append({'x': x, 'y': y, 'z': z}),
+        'addEdge': lambda v1, v2: example3DModel['edges'].append({'v1': v1, 'v2': v2}),
+        'addFace': lambda v1, v2, v3: example3DModel['faces'].append({'v1': v1, 'v2': v2, 'v3': v3})
+    }
+    # Verbesserte 3D-Modelllogik
+    example3DModel['addVertex'](0, 0, 0)
+    example3DModel['addVertex'](1, 0, 0)
+    example3DModel['addVertex'](0, 1, 0)
+    example3DModel['addEdge'](0, 1)
+    example3DModel['addEdge'](0, 2)
+    example3DModel['addFace'](0, 1, 2)
+    print(example3DModel)
+    self.store_data({'type': '3d_model', 'data': example3DModel})
+    return example3DModel
+
+# Neue Funktion: Erweiterte Datenvisualisierung
+def advanced_visualize_data(self, data):
+    print("Advanced visualizing data...")
+    chart = {
+        'type': 'line',
+        'data': [{'label': item['label'], 'value': item['value']} for item in data],
+        'options': {
+            'title': 'Advanced Data Visualization',
+            'axis': {'x': 'Labels', 'y': 'Values'},
+            'grid': True
+        }
+    }
+    print("Generated advanced chart:", chart)
+    self.store_data({'type': 'advanced_visualization', 'chart': chart})
+    return chart
+
+# Neue Funktion: Verstärkungslernen
+def reinforcement_learning(self, environment, actions):
+    print("Starting reinforcement learning...")
+    q_table = {}
+    for action in actions:
+        q_table[action] = 0  # Initialisiere Q-Werte
+    print("Initial Q-table:", q_table)
+    for _ in range(100):  # Dummy-Schleife zum Lernen
+        for action in actions:
+            reward = environment.get_reward(action)
+            q_table[action] += self.learning_rate * reward
+    print("Updated Q-table:", q_table)
+    self.store_data({'type': 'reinforcement_learning', 'q_table': q_table})
+    return q_table
+
+# Beispielaufrufe der erweiterten Funktionen
+prai = PRAI()
+
+example_data = [
+    {'value1': 5, 'value2': 10, 'value3': 15},
+    {'value1': 6, 'value2': 12, 'value3': 18},
+    {'value1': 7, 'value2': 14, 'value3': 21}
+]
+
+new_knowledge = [
+    {"key": "Quantum Networking", "information": "A futuristic networking technology using quantum entanglement."},
+    {"key": "Bioinformatics", "information": "The use of computer technology to manage biological information."}
+]
+
+data_sources = [
+    {"source": "Sensor1", "data": [10, 20, 30]},
+    {"source": "Sensor2", "data": [15, 25, 35]},
+    {"source": "Database", "data": [12, 22, 32]}
+]
+
+options = [
+    {"option": "Option1", "score": 75},
+    {"option": "Option2", "score": 85},
+    {"option": "Option3", "score": 65}
+]
+
+future_data = [
+    {"event": "Rain"},
+    {"event": "Sun"},
+    {"event": "Snow"}
+]
+
+anomaly_data = [
+    {"value": 50},
+    {"value": 150},
+    {"value": 75}
+]
+
+tasks = [
+    {"task": "Optimize performance", "value": 100},
+    {"task": "Reduce latency", "value": 200},
+    {"task": "Improve accuracy", "value": 300}
+]
+
+# Beispiel-Umgebung und Aktionen für Verstärkungslernen
+class DummyEnvironment:
+    def get_reward(self, action):
+        return random.uniform(-1, 1)
+
+environment = DummyEnvironment()
+actions = ["action1", "action2", "action3"]
+
+# Aufruf der erweiterten Funktionen und Speicherung der Ergebnisse
+aggregate_data = prai.process_realtime_data([{'value': 10}, {'value': 20}, {'value': 30}])
+anomalies = prai.detect_anomalies(anomaly_data)
+sentiment_score = prai.analyze_sentiment("This is an absolutely fantastic day!")
+predictions = prai.predict_future_events(future_data)
+processed_text = prai.process_text_data("The quick brown fox jumps over the lazy dog.")
+features = prai.analyze_data(example_data)
+integrated_data = prai.integrate_data_sources(data_sources)
+best_decision = prai.ai_decision_making(options)
+nlp_tokens = prai.process_natural_language("The quick brown fox jumps over the lazy dog.")
+data_chart = prai.visualize_data([{'label': 'A', 'value': 10}, {'label': 'B', 'value': 20}, {'label': 'C', 'value': 30}])
+compressed_data = prai.intelligent_data_compression([100, 200, 300])
+optimized_results = prai.perform_optimization_tasks(tasks)
+extended_knowledge = expand_machine_learning(prai.knowledge_base)
+advanced_3d_model = prai.advanced_3d_logic()
+advanced_chart = prai.advanced_visualize_data([{'label': 'A', 'value': 10}, {'label': 'B', 'value': 20}, {'label': 'C', 'value': 30}])
+q_table = prai.reinforcement_learning(environment, actions)
+prai.extend_and_learn()
+
+print("Aggregate data:", aggregate_data)
+print("Anomalies:", anomalies)
+print("Sentiment score:", sentiment_score)
+print("Predictions:", predictions)
+print("Processed text:", processed_text)
+print("Features:", features)
+print("Integrated data:", integrated_data)
+print("Best decision:", best_decision)
+print("NLP tokens:", nlp_tokens)
+print("Data chart:", data_chart)
+print("Compressed data:", compressed_data)
+print("Optimized results:", optimized_results)
+print("Extended knowledge:", extended_knowledge)
+print("Advanced 3D model:", advanced_3d_model)
+print("Advanced chart:", advanced_chart)
+print("Q-table:", q_table)
+
+# Fortsetzung der vorhandenen Funktionen
+# Technische Details und Architektur des PRAI-Systems
+print("Technische Details und Architektur des PRAI-Systems werden weiter analysiert...")
+print(f"Matrix Bridge: {prai.matrix_bridge}")
+print(f"Ethical Guidelines: {prai.ethical_guidelines
