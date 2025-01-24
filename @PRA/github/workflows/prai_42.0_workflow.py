@@ -378,3 +378,211 @@ conclusions = [
 
 for conclusion in conclusions:
     print(conclusion)
+class PRAI:
+    def __init__(self):
+        self.knowledge_base = {}
+        self.ethical_guidelines = "Act ethically and promote health for all beings."
+        self.matrix_bridge = "Matrix Potalbrücke zu RFOF und PR AI"
+        self.situation_core_container = {}
+        self.cold_net = {}
+        self.learning_rate = 0.01
+
+    def add_knowledge(self, key, information):
+        self.knowledge_base[key] = information
+
+    def analyze_situation(self, situation):
+        virtual_container = self.generate_virtual_container(situation)
+        solutions = self.calculate_solutions(virtual_container)
+        return solutions
+
+    def generate_virtual_container(self, situation):
+        container_id = len(self.situation_core_container) + 1
+        container = {
+            "id": container_id,
+            "situation": situation,
+            "analysis": "Simulating all possible outcomes."
+        }
+        self.situation_core_container[container_id] = container
+        return container
+
+    def calculate_solutions(self, container):
+        situation = container['situation']
+        analysis = container['analysis']
+        solutions = f"Solutions based on analysis of {situation}"
+        return solutions
+
+    def ethical_action(self, action):
+        return f"Executing ethical action: {action} according to {self.ethical_guidelines}"
+
+    def store_data(self, data):
+        data_id = len(self.cold_net) + 1
+        self.cold_net[data_id] = data
+        print(f"Data stored in ColdNet: {data}")
+
+    def evaluate_health(self, situation):
+        return f"Health assessment for {situation}: Optimal"
+
+    def abc_logik(self, text):
+        result = ""
+        for char in text:
+            if char.isalpha():
+                result += str(ord(char.lower()) - ord('a') + 1) + " "
+            else:
+                result += char
+        return result
+
+    def handle_3d_logic(self):
+        print("Handling 3D logic and simulations...")
+        example3DModel = {
+            'vertices': [],
+            'edges': [],
+            'faces': [],
+            'addVertex': lambda x, y, z: example3DModel['vertices'].append({'x': x, 'y': y, 'z': z}),
+            'addEdge': lambda v1, v2: example3DModel['edges'].append({'v1': v1, 'v2': v2}),
+            'addFace': lambda v1, v2, v3: example3DModel['faces'].append({'v1': v1, 'v2': v2, 'v3': v3})
+        }
+        example3DModel['addVertex'](0, 0, 0)
+        example3DModel['addVertex'](1, 0, 0)
+        example3DModel['addEdge'](0, 1)
+        example3DModel['addFace'](0, 1, 2)
+        print(example3DModel)
+
+    def adjust_learning_rate(self, new_rate):
+        self.learning_rate = new_rate
+        print(f"Learning rate adjusted to: {self.learning_rate}")
+
+    def optimize_algorithms(self):
+        print("Optimizing algorithms based on new data...")
+        self.learning_rate *= 0.9
+        print(f"New learning rate: {self.learning_rate}")
+        weight_adjustments = lambda weights: [w * self.learning_rate for w in weights]
+        print("Adjusted weights:", weight_adjustments([0.5, 0.75, 1.0]))
+
+    def process_realtime_data(self, data_stream):
+        print("Processing real-time data...")
+        for chunk in data_stream:
+            processed_chunk = [item * self.learning_rate for item in chunk]
+            print("Processed real-time data chunk:", processed_chunk)
+            self.store_data({'type': 'realtime', 'data': processed_chunk})
+
+    def detect_anomalies(self, data):
+        print("Detecting anomalies...")
+        anomalies = [item for item in data if item['value'] > 100]
+        print("Detected anomalies:", anomalies)
+        self.store_data({'type': 'anomaly', 'data': anomalies})
+        return anomalies
+
+    def analyze_sentiment(self, text):
+        print("Analyzing sentiment...")
+        positive_words = ['great', 'happy', 'fantastic']
+        negative_words = ['bad', 'sad', 'terrible']
+        sentiment_score = 0
+
+        for word in text.split(' '):
+            if word.lower() in positive_words:
+                sentiment_score += 1
+            elif word.lower() in negative_words:
+                sentiment_score -= 1
+
+        print("Sentiment score:", sentiment_score)
+        self.store_data({'type': 'sentiment', 'score': sentiment_score})
+        return sentiment_score
+
+    def predict_future_events(self, data):
+        print("Predicting future events...")
+        predictions = [{'event': item['event'], 'likelihood': random.random()} for item in data]
+        print("Predicted future events:", predictions)
+        self.store_data({'type': 'prediction', 'data': predictions})
+        return predictions
+
+    def process_speech(self, audio_stream):
+        print("Processing speech...")
+        text = audio_stream.transcribe()
+        print("Transcribed text:", text)
+        self.store_data({'type': 'speech', 'text': text})
+        return text
+
+    def extend_knowledge_base(self, new_knowledge):
+        print("Extending knowledge base using machine learning...")
+        for item in new_knowledge:
+            self.knowledge_base[item['key']] = item['information']
+        print("Updated knowledge base:", self.knowledge_base)
+
+    def generate_ideas(self):
+        print("Generating new ideas based on existing knowledge...")
+        ideas = [f"Innovative use of {key}: {info}" for key, info in self.knowledge_base.items()]
+        print("Generated ideas:", ideas)
+        return ideas
+
+    def extend_and_learn(self):
+        print("Extending and learning continuously...")
+        additional_knowledge = [
+            {"key": "Artificial General Intelligence", "information": "An advanced AI that can understand, learn, and apply knowledge across a wide range of tasks."},
+            {"key": "Edge Computing", "information": "A distributed computing paradigm that brings computation and data storage closer to the sources of data."}
+        ]
+        self.extend_knowledge_base(additional_knowledge)
+        print("Knowledge base extended:", self.knowledge_base)
+
+    def analyze_data(self, data):
+        print("Analyzing data for machine learning purposes...")
+        features = [{'feature1': item['value1'] * self.learning_rate, 'feature2': item['value2'] / (self.learning_rate + 1), 'feature3': math.log(item['value3'] + 1)} for item in data]
+        print("Extracted features:", features)
+        return features
+
+    def integrate_data_sources(self, data_sources):
+        print("Integrating data from multiple sources...")
+        integrated_data = [item for source in data_sources for item in source['data']]
+        print("Integrated data:", integrated_data)
+        self.store_data({'type': 'integrated', 'data': integrated_data})
+        return integrated_data
+
+    def ai_decision_making(self, options):
+        print("Making AI-powered decisions...")
+        decision = max(options, key=lambda option: option['score'])
+        print("Best decision:", decision)
+        self.store_data({'type': 'decision', 'data': decision})
+        return decision
+
+    def process_natural_language(self, text):
+        print("Processing natural language...")
+        stop_words = ['the', 'is', 'in', 'and', 'to', 'a']
+        tokens = [token for token in text.split(' ') if token.lower() not in stop_words]
+        print("Processed tokens:", tokens)
+        self.store_data({'type': 'nlp', 'tokens': tokens})
+        return tokens
+
+    def visualize_data(self, data):
+        print("Visualizing data...")
+        chart = {
+            'type': 'bar',
+            'data': [{'label': item['label'], 'value': item['value']} for item in data],
+            'options': {
+                'title': 'Data Visualization',
+                'axis': {'x': 'Labels', 'y': 'Values'}
+            }
+        }
+        print("Generated chart:", chart)
+        self.store_data({'type': 'visualization', 'chart': chart})
+        return chart
+
+# Beispielaufrufe der erweiterten Funktionen
+prai = PRAI()
+
+example_data = [
+    {'value1': 5, 'value2': 10, 'value3': 15},
+    {'value1': 6, 'value2': 12, 'value3': 18},
+    {'value1': 7, 'value2': 14, 'value3': 21}
+]
+
+new_knowledge = [
+    {"key": "Quantum Networking", "information": "A futuristic networking technology using quantum entanglement."},
+    {"key": "Bioinformatics", "information": "The use of computer technology to manage biological information."}
+]
+
+data_sources = [
+    {"source": "Sensor1", "data": [10, 20, 30]},
+    {"source": "Sensor2", "data": [15, 25, 35]},
+    {"source": "Database", "data": [12, 22, 32]}
+]
+
+options = 
